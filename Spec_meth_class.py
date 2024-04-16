@@ -3,6 +3,6 @@ class House:
         self.numberOfFloors = 0
     def setNewNumberOfFloors(self):
         self.numberOfFloors = 5
+        print(house.numberOfFloors)
 house = House()
 house.setNewNumberOfFloors()
-print(house.numberOfFloors)
