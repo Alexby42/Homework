@@ -1,12 +1,9 @@
 class Building:
-    def __init__(self, str=None):
-        self.numberOfFloors = 0
-        self.buildingType = str
+    def __init__(self, floors, type_):
+        self.type_ = type_
+        self.floors = floors
     def __eq__(self, other):
-        return self.numberOfFloors == other.numberOfFloors and self.buildingType == other.buildingType
-number1 = Building(7)
-number2 = Building(7)
-type1 = Building('seven')
-type2 = Building('twenty four')
-print(number1 == number2)
-print(type1 == type2)
+        return self.floors == other.floors and self.type_ == other.type_
+building1 = Building(10, 'ten')
+building2 = Building(10, 'ten')
+print(building1 == building2)
