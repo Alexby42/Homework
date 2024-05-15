@@ -4,7 +4,7 @@ print('First & last elements: ' + str(my_list[0:5:4]))  # вывод перво�
 print('Third-fifth elements: ' + str(my_list[2:5]))     # вывод с третьего по пятый элемент списка
 my_list[2] = 'peach'                                    # замена третьего элемента списка
 print('Modified list: ' + str(my_list))                 # вывод измененного списка
-
+print()
 my_dict = {'pineapple': 'ананас', 'banana': 'банан', 'apple': 'яблоко'}
 print('Dictionary: ' + str(my_dict))                    # вывод словаря
 print('Translation: ' + str(my_dict['pineapple']))      # вывод значения для заданного ключа
