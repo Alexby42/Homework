@@ -1,4 +1,4 @@
-def print_params(a = 1, b = 'string', c = True):
+def print_params(a = 1, b = 'строка', c = True):
 	print(a, b, c)
 print_params()
 print_params(a = 'Python')
