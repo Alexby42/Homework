@@ -3,19 +3,19 @@ def add_everything_up(a, b):
         print(a + b)
     except TypeError as exc:
         print('Ошибка: неподдерживаемые типы операндов для суммирования', exc)
-    else:
-        print('А что, так можно было?')
+        print(str(a) + b)
     finally:
-        return f'123.456строка'
+        return f'Но задача решена'
 print(add_everything_up(123.456, 'строка'))
 print()
 def add_everything_up(a, b):
     try:
         print(a + b)
     except TypeError:
-        print('Нельзя суммировать разные типы данных, но...')
+        print('Нельзя суммировать разные типы данных')
+        print(a + str(b))
     finally:
-        return f'яблоко4215'
+        return f'Но задача решена'
 print(add_everything_up('яблоко', 4215))
 print()
 def add_everything_up(a, b):
