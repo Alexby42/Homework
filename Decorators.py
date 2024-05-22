@@ -1,10 +1,10 @@
-def is_prime(sum_three):
+def is_prime(func):
     def wrapper(*arg):
-        if sum_three(*arg) % 2 == 0:
+        if func(*arg) % 2 == 0:
             print('Составное')
         else:
             print('Простое')
-        return sum_three(*arg)
+        return func(*arg)
     return wrapper
 @is_prime
 def sum_three(a, b, c):
