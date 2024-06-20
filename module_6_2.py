@@ -25,9 +25,12 @@ class Sedan(Vehicle):
     __PASSENGERS_LIMIT = 5
     def __init__(self, model, engine_power, color, owner):
         super().__init__(model, engine_power, color, owner)
+    def info(self):
+        print(f'Количество мест: {self.__PASSENGERS_LIMIT}')
 vehicle1 = Sedan('Toyota Mark II', 500, 'blue', 'Fedos')
 vehicle1.print_info()
 vehicle1.set_color('Pink')
 vehicle1.set_color('BLACK')
 vehicle1.owner = 'Vasyok'
 vehicle1.print_info()
+vehicle1.info()
