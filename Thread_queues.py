@@ -24,7 +24,6 @@ class Cafe:
                 customer_thread = Customer(customer, self, self.queue, table)
                 customer_thread.start()
                 self.customers_threads.append(customer_thread)
-                #free_table = True
                 return
         if not free_table:
             print(f'Посетитель номер {customer} ожидает свободный стол')
@@ -47,8 +46,6 @@ table1 = Table(1)
 table2 = Table(2)
 table3 = Table(3)
 tables = [table1, table2, table3]
-# for i in range(1, 4):
-#     tables.append(Table(i))
 cafe = Cafe(tables)
 customer_arrival_thread = threading.Thread(target=cafe.customer_arrival)
 customer_arrival_thread.start()
