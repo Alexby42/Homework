@@ -6,8 +6,8 @@ class WarehouseManager:
         for key, arg_, value in requests:
             if arg_ == 'receipt':
                 self.data.setdefault(key, value)
-                if arg_ == 'shipment':
-                    self.data[value] -= [value]
+                #if arg_ == 'shipment':
+                    #self.data[value] -= [value]
         return self.data
     def run(self):
         for request in self.data:
