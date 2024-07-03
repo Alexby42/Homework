@@ -27,8 +27,3 @@ https://habr.com/ru/articles/133337/
 Самое полное руководство по разработке на Python в примерах от сообщества Stack Overflow
 МакГрат М. Программирование на Python для начинающих
 Кольцов Д. М. Python. Создаём программы и игры
-
-https://translated.turbopages.org/proxy_u/en-ru.ru.7f694d57-6684c69f-c5c4b0ef-74722d776562/https/www.geeksforgeeks.org/standard-gui-unit-converter-using-tkinter-in-python/
-https://qna.habr.com/q/973537
-https://ru.stackoverflow.com/questions/1355072/Метрический-конвертер-tkinter
-https://www.geeksforgeeks.org/python-weight-conversion-gui-using-tkinter/
