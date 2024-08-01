@@ -62,7 +62,7 @@ async def end_of_reg(message, state):
     data = await state.get_data()
     add_user(data['username'], data['email'], data['age'])
     await state.finish()
-    await message.answer('Регистрция прошла успешно', reply_markup=prime_menu)
+    await message.answer('Регистрация прошла успешно', reply_markup=prime_menu)
 @dp.message_handler(text='Купить')
 async def get_buying_list(message):
     images = [
@@ -119,7 +119,6 @@ async def send_calories(message, state):
     await state.finish()
 @dp.message_handler()
 async def all_message(message):
-    print('Мы получили новое сообщение')
     await message.answer('Введите команду /start, чтобы начать общение.')
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
