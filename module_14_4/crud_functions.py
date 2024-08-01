@@ -30,5 +30,5 @@ def get_all_product():
     cursor.execute('SELECT price FROM Products')
     prices_list = cursor.fetchall()
     return [title_list, descriptions_list, prices_list]
-connection.commit() #Сохраняет состояние бд перед закрытием
+connection.commit()
 connection.close()
