@@ -30,9 +30,8 @@ class Test(unittest.TestCase):
         result = turn3.start()
         self.assertTrue(result[list(result.keys())[-1]] == 'Ник', 'Ошибка! Ник всегда должен быть последним')
         self.all_results['test_turn3'] = result
-    '''Последний тест на логическую ошибку. Удаление объекта из списка происходит до обработки всего цикла'''
     def test_turn4(self):
-        turn_4 = rt.Tournament(5, self.student1, self.student2, self.student3)
+        turn_4 = rt.Tournament(10, self.student1, self.student2, self.student3)
         result = turn_4.start()
         self.assertTrue(result[list(result.keys())[-1]] == 'Ник', 'Ошибка! Ник всегда должен быть последним')
         self.all_results['test_turn4'] = result
